@@ -47,7 +47,6 @@ const Login = () => {
       </button>
      
     </form>
-   <a href="/admin-login">admin?</a>
         </>
   );
 };
