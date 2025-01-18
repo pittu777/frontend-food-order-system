@@ -16,7 +16,7 @@ export const placeOrder = async (orderDetails) => {
     console.log('Using token:', token);
 
     const response = await axios.post(
-      'http://localhost:5000/api/orders/order', // Update the URL as needed
+      'https://backend-food-order-system-1.onrender.com/api/orders/order', // Update the URL as needed
       orderDetails,
       {
         headers: {
