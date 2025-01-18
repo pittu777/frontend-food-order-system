@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = 'http://localhost:5000/api/orders';
+const API_URL = 'https://backend-food-order-system-1.onrender.com/api/orders';
 
 
 

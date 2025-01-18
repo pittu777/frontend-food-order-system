@@ -8,7 +8,7 @@ const AllUsers = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/admin/users', {
+        const response = await axios.get('https://backend-food-order-system-1.onrender.com/api/admin/users', {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         });
         dispatch({ type: 'SET_USERS', payload: response.data });
@@ -22,7 +22,7 @@ const AllUsers = () => {
 
   const handleDeleteUser = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/admin/users/${id}`, {
+      await axios.delete(`https://backend-food-order-system-1.onrender.com/api/admin/users/${id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       });
       dispatch({ type: 'DELETE_USER', payload: id });

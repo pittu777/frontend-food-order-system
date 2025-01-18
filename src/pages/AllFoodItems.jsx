@@ -9,7 +9,7 @@ const AllFoodItems = () => {
   useEffect(() => {
     const fetchFoodItems = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/admin/foods', {
+        const response = await axios.get('https://backend-food-order-system-1.onrender.com/api/admin/foods', {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         });
         dispatch({ type: 'SET_FOOD_ITEMS', payload: response.data });

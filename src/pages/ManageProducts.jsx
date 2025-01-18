@@ -15,7 +15,7 @@ const ManageProducts = () => {
       e.preventDefault();
       try {
         const response = await axios.post(
-          'http://localhost:5000/api/foods/add-food',
+          'https://backend-food-order-system-1.onrender.com/api/foods/add-food',
           { name, price, category, imageUrl, availability },
           {
             headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },

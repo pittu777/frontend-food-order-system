@@ -13,7 +13,7 @@ const AdminLogin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/admin/admin-login', { email, password });
+      const response = await axios.post('https://backend-food-order-system-1.onrender.com/api/admin/admin-login', { email, password });
       const { token, adminUser } = response.data;
       localStorage.setItem('token', token);
       dispatch({ type: 'SET_ADMIN_USER', payload: adminUser });

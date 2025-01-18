@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/foods"; 
+// const API_URL = "http://localhost:5000/api/foods"; 
+
+const API_URL = 'https://backend-food-order-system-1.onrender.com/api/foods';
 
 export const fetchAllFoods = async () => {
   try {

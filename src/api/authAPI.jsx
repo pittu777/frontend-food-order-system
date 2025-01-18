@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000/api/auth';
+// const API_BASE_URL = 'http://localhost:5000/api/auth';
+
+const API_BASE_URL = 'https://backend-food-order-system-1.onrender.com/api/auth';
 
 export const loginUser = async (email, password) => {
   const response = await axios.post(`${API_BASE_URL}/login`, { email, password });
